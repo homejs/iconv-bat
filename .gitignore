@@ -1,0 +1,7 @@
+.idea
+*~
+*.log
+*.out
+*.tgz
+/node_modules
+/test/converted

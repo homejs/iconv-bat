@@ -1,0 +1,23 @@
+{
+  "name": "iconv-bat",
+  "version": "0.0.1",
+  "main": "lib/iconv-bat.js",
+  "bin": {
+    "iconv-bat": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:homejs/iconv-bat.git"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.2.11",
+    "async": "^0.7.0",
+    "mkdirp": "^0.4.0"
+  },
+  "devDependencies": {
+    "tap": "^0.4.8"
+  }
+}
