@@ -7,11 +7,17 @@
 var IconvBat = require('..');
 var minimist = require('minimist');
 
-var argv = minimist(process.argv.slice(2));
+var argv = minimist(process.argv.slice(2), {
+  string: ['from', 'to'],
+  alias: {
+    from: ['f'],
+    to: ['t']
+  }
+});
 
-var fromEncoding = argv.f;
-var toEncoding = argv.t;
-var directory = argv._[0];
+var fromEncoding = argv.from;
+var toEncoding = argv.to;
+var directory = argv._[0] || process.cwd();
 var outDirectory = argv._[1];
 
 var iconvBat = new IconvBat(fromEncoding, toEncoding);
