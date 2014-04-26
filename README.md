@@ -8,7 +8,9 @@ Convert file/directory between encodings.
 
 ```sh
 npm install -g iconv-bat
-iconv-bat gbk utf-8 path/to/directory
+iconv-bat -f gbk -t utf-8 path/to/directory output/to/directory
+iconv-bat path/to/directory output/to/directory
+iconv-bat path/to/directory
 ```
 
 ### In Node
