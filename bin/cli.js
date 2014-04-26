@@ -9,7 +9,7 @@ var IconvBat = require('..');
 var fromEncoding = process.argv[2];
 var toEncoding = process.argv[3];
 var directory = process.argv[4];
-var outDirectory = process.argv[5] || null;
+var outDirectory = process.argv[5] || directory;
 
 var iconvBat = new IconvBat(fromEncoding, toEncoding);
 
