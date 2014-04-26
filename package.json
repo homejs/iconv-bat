@@ -1,6 +1,6 @@
 {
   "name": "iconv-bat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/iconv-bat.js",
   "bin": {
     "iconv-bat": "bin/cli.js"
@@ -15,7 +15,8 @@
   "dependencies": {
     "iconv-lite": "^0.2.11",
     "async": "^0.7.0",
-    "mkdirp": "^0.4.0"
+    "mkdirp": "^0.4.0",
+    "minimist": "0.0.8"
   },
   "devDependencies": {
     "tap": "^0.4.8"

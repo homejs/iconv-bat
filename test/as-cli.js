@@ -20,7 +20,7 @@ test('should convert directory correctly', function (t) {
       throw err;
     }
     exec([
-      'iconv-bat', fromEncoding, toEncoding, directory, outDirectory
+      'iconv-bat', '-f', fromEncoding, '-t', toEncoding, directory, outDirectory
     ].join(' '), function (err) {
       if (err) {
         throw err;
