@@ -9,20 +9,24 @@ var minimist = require('minimist');
 
 var argv = minimist(process.argv.slice(2), {
   string: ['from', 'to'],
+  boolean: ['recursive'],
   alias: {
     from: ['f'],
-    to: ['t']
+    to: ['t'],
+    recursive: ['r']
   }
 });
 
 var fromEncoding = argv.from;
 var toEncoding = argv.to;
-var directory = argv._[0] || process.cwd();
-var outDirectory = argv._[1];
+var recursive = argv.recursive || false;
+var file = argv._[0] || process.cwd();
+var outFile = argv._[1];
 
 var iconvBat = new IconvBat(fromEncoding, toEncoding);
+var method = recursive ? 'convert' : 'convertFile';
 
-iconvBat.convertDirectory(directory, outDirectory, function (err) {
+iconvBat[method](file, outFile, function (err) {
   if (err) {
     throw err;
   }

@@ -16,7 +16,7 @@ var outFile = path.join(__dirname, 'converted/plan.txt');
 var iconvBat = new IconvBat(fromEncoding, toEncoding);
 
 test('should convert file correctly', function (t) {
-  iconvBat.convertFile(file, outFile, function (err) {
+  iconvBat.convert(file, outFile, function (err) {
     if (err) {
       throw err;
     }

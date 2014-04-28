@@ -1,6 +1,6 @@
 {
   "name": "iconv-bat",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "lib/iconv-bat.js",
   "bin": {
     "iconv-bat": "bin/cli.js"
