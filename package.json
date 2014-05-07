@@ -1,6 +1,6 @@
 {
   "name": "iconv-bat",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "lib/iconv-bat.js",
   "bin": {
     "iconv-bat": "bin/cli.js"
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:homejs/iconv-bat.git"
+    "url": "git@github.com:fritx/iconv-bat.git"
   },
   "dependencies": {
     "iconv-lite": "^0.2.11",
